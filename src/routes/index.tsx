@@ -310,10 +310,15 @@ function Gallery() {
 /* ---------------- Social proof ---------------- */
 function SocialProof() {
   const reviews = [
-    { n: "Camille L.", q: "Je les porte tous les jours, zéro douleur après une journée entière au bureau." },
-    { n: "Anaïs R.", q: "Enfin des mules stylées ET confortables. Je ne porte plus que ça." },
-    { n: "Sophie M.", q: "Le cuir est sublime, et la semelle change tout. Mes pieds disent merci." },
-    { n: "Élise B.", q: "Parfaites en ville, à la maison, en terrasse. Un vrai coup de cœur." },
+    { n: "Frederique D.", d: "26 mars 2026", q: "Très belles, confortables, belle couleur. Parfait." },
+    { n: "Camille N.", d: "23 janv. 2026", q: "Taillent bien, très agréables à porter. Excellent rapport qualité-prix." },
+    { n: "Sophie M.", d: "25 avr. 2026", q: "J'ai bien aimé. La couleur et la taille sont exactement celles que je prends d'habitude." },
+    { n: "Béatrice L.", d: "8 avr. 2026", q: "Belle finition et très confortables. Je recommande." },
+  ];
+  const fit = [
+    { label: "Taille petit", value: 3 },
+    { label: "Taille juste", value: 90 },
+    { label: "Taille grand", value: 7 },
   ];
   return (
     <section id="avis" className="bg-sand/50 py-24 md:py-32">
@@ -322,7 +327,7 @@ function SocialProof() {
           <div className="max-w-xl">
             <span className="eyebrow">Elles en parlent</span>
             <h2 className="mt-3 text-3xl md:text-5xl leading-[1.05]">
-              4,9 / 5 — sur 2 384 avis vérifiés.
+              4,7 / 5 — sur 4 309 avis vérifiés.
             </h2>
           </div>
           <div className="flex items-center gap-1">
@@ -330,6 +335,20 @@ function SocialProof() {
               <Star key={i} className="h-5 w-5 fill-current text-foreground" />
             ))}
           </div>
+        </div>
+
+        <div className="mt-10 grid md:grid-cols-3 gap-4 max-w-3xl">
+          {fit.map((f) => (
+            <div key={f.label} className="bg-background border border-border rounded-sm p-5">
+              <div className="flex items-baseline justify-between">
+                <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">{f.label}</span>
+                <span className="font-display text-2xl">{f.value}%</span>
+              </div>
+              <div className="mt-3 h-1 bg-sand-deep/50 rounded-full overflow-hidden">
+                <div className="h-full bg-foreground" style={{ width: `${f.value}%` }} />
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -342,11 +361,14 @@ function SocialProof() {
               </div>
               <blockquote className="text-base leading-relaxed flex-1">« {r.q} »</blockquote>
               <figcaption className="mt-5 text-xs text-muted-foreground uppercase tracking-widest">
-                {r.n} · Achat vérifié
+                {r.n} · {r.d}
               </figcaption>
             </figure>
           ))}
         </div>
+        <p className="mt-6 text-xs text-muted-foreground">
+          Tous les avis proviennent d'achats vérifiés.
+        </p>
       </div>
     </section>
   );
