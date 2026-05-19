@@ -133,10 +133,10 @@ function Hero() {
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="h-3.5 w-3.5 fill-current" />
               ))}
-              <span className="ml-2 text-xs text-muted-foreground">4,9 / 5 · 2 384 avis</span>
+              <span className="ml-2 text-xs text-muted-foreground">4,7 / 5 · 4 309 avis</span>
             </div>
             <p className="mt-2 text-sm leading-snug">
-              « Je les porte tous les jours, zéro douleur. »
+              « Très belles, confortables, belle couleur. Parfait. »
             </p>
           </div>
         </div>
