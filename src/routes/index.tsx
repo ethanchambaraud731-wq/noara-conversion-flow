@@ -211,7 +211,7 @@ function Solution() {
         <div className="md:col-span-6 order-2 md:order-1">
           <img
             src={productSide}
-            alt="Mule NOARA vue de profil, semelle ergonomique"
+            alt="Sabot NOARA en daim beige avec boucle et semelle liège"
             width={1280}
             height={1280}
             loading="lazy"
@@ -219,21 +219,63 @@ function Solution() {
           />
         </div>
         <div className="md:col-span-6 order-1 md:order-2">
-          <span className="eyebrow">La réponse</span>
+          <span className="eyebrow">Le sabot NOARA</span>
           <h2 className="mt-4 text-3xl md:text-5xl leading-[1.1]">
-            Bout fermé, semelle épaisse. Le confort d'une pantoufle, l'allure d'une vraie chaussure.
+            Bout fermé, semelle épaisse. Le confort d'une pantoufle, l'allure d'un vrai soulier.
           </h2>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-            Une semelle caoutchouc épaisse et antidérapante, un bout rond
-            enveloppant, un intérieur doux qui tient chaud. Pensée pour
-            l'automne et l'hiver, à porter dehors comme à la maison.
+            Daim doux, boucle ajustable, semelle caoutchouc épaisse et
+            antidérapante. Un sabot moderne pensé pour l'automne et l'hiver,
+            à porter dehors comme à la maison.
           </p>
+
+          <div className="mt-8">
+            <div className="flex items-center justify-between">
+              <span className="eyebrow">Coloris</span>
+              <span className="text-xs text-muted-foreground">4 teintes</span>
+            </div>
+            <div className="mt-3 flex flex-wrap gap-3">
+              {[
+                { n: "Beige", c: "oklch(0.84 0.04 75)" },
+                { n: "Noir", c: "oklch(0.18 0 0)" },
+                { n: "Kaki", c: "oklch(0.55 0.05 110)" },
+                { n: "Marron foncé", c: "oklch(0.38 0.05 50)" },
+              ].map((col) => (
+                <div key={col.n} className="flex items-center gap-2 border border-border rounded-full pl-1 pr-3 py-1 bg-background">
+                  <span
+                    className="h-6 w-6 rounded-full border border-border"
+                    style={{ backgroundColor: col.c }}
+                    aria-hidden
+                  />
+                  <span className="text-xs">{col.n}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="mt-7">
+            <div className="flex items-center justify-between">
+              <span className="eyebrow">Taille (EU)</span>
+              <a href="#faq" className="text-xs underline text-muted-foreground">Guide des tailles</a>
+            </div>
+            <div className="mt-3 flex flex-wrap gap-2">
+              {["35","35.5","36","37","38","38.5","39","40","40.5","41.5","42","43"].map((s) => (
+                <span key={s} className="min-w-11 text-center text-sm border border-border rounded-sm px-3 py-2 bg-background">
+                  {s}
+                </span>
+              ))}
+            </div>
+            <p className="mt-3 text-xs text-muted-foreground">
+              90% de nos clientes confirment : <strong className="text-foreground font-medium">cet article taille juste</strong>.
+            </p>
+          </div>
+
           <dl className="mt-10 grid sm:grid-cols-2 gap-x-8 gap-y-6">
             {[
               ["Semelle épaisse caoutchouc", "Antidérapante, amortit chaque pas."],
               ["Bout rond fermé", "Protège du froid et de l'humidité."],
-              ["À enfiler", "Glissez-les en une seconde, sans lacets."],
-              ["Intérieur doux", "Tissu chaud, sensation pantoufle."],
+              ["À enfiler", "Glissez-les en une seconde, boucle ajustable."],
+              ["Intérieur doux", "Daim & liège, sensation pantoufle."],
             ].map(([t, d]) => (
               <div key={t}>
                 <dt className="font-medium">{t}</dt>
@@ -416,7 +458,7 @@ function Faq() {
     },
     {
       q: "Comment les entretenir ?",
-      a: "Un chiffon doux et un peu de cirage neutre suffisent. Évitez l'eau prolongée. Nous offrons un kit d'entretien dans chaque commande.",
+      a: "Brossez le daim avec une brosse douce pour raviver le nubuck. Évitez l'eau prolongée. Un spray imperméabilisant prolonge la tenue du daim et du liège.",
     },
     {
       q: "Quelle est la politique de retour ?",
@@ -546,7 +588,7 @@ function StickyCta() {
           <div className="text-[10px] uppercase tracking-[0.2em] text-background/60">
             35,99 €
           </div>
-          <div className="text-sm">Mule NOARA — Cuir</div>
+          <div className="text-sm">Sabot NOARA — Daim</div>
         </div>
         <a
           href="#cta"
