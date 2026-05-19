@@ -110,7 +110,7 @@ function Hero() {
           </div>
 
           <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-xs text-muted-foreground">
-            <li className="flex items-center gap-2"><Truck className="h-3.5 w-3.5" /> Livraison offerte dès 80€</li>
+            <li className="flex items-center gap-2"><Truck className="h-3.5 w-3.5" /> Livraison offerte dès 50€</li>
             <li className="flex items-center gap-2"><RotateCcw className="h-3.5 w-3.5" /> Retours 30 jours</li>
             <li className="flex items-center gap-2"><ShieldCheck className="h-3.5 w-3.5" /> Paiement sécurisé</li>
           </ul>
@@ -412,7 +412,7 @@ function Faq() {
     },
     {
       q: "Quels sont les délais de livraison ?",
-      a: "Expédition sous 24h ouvrées. Comptez 2 à 4 jours en France métropolitaine, 4 à 7 jours en Europe. Livraison offerte dès 80 € d'achat.",
+      a: "Expédition sous 24h ouvrées. Comptez 2 à 4 jours en France métropolitaine, 4 à 7 jours en Europe. Livraison offerte dès 50 € d'achat.",
     },
     {
       q: "Comment les entretenir ?",
@@ -478,7 +478,7 @@ function FinalCta() {
         </h2>
         <p className="mt-6 text-background/70 max-w-xl mx-auto text-lg">
           Stock limité — chaque paire est confectionnée en petite série.
-          Livraison offerte dès 80 €, retours 30 jours.
+          Livraison offerte dès 50 €, retours 30 jours.
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-4">
           <a
@@ -489,7 +489,7 @@ function FinalCta() {
           </a>
         </div>
         <p className="mt-6 text-xs text-background/50">
-          À partir de 129 € · ou 3 × 43 € sans frais
+          35,99 € · paiement sécurisé
         </p>
       </div>
     </section>
@@ -544,7 +544,7 @@ function StickyCta() {
       <div className="m-3 rounded-sm bg-ink text-background flex items-center justify-between pl-4 pr-2 py-2 shadow-lg">
         <div className="leading-tight">
           <div className="text-[10px] uppercase tracking-[0.2em] text-background/60">
-            À partir de 129 €
+            35,99 €
           </div>
           <div className="text-sm">Mule NOARA — Cuir</div>
         </div>
