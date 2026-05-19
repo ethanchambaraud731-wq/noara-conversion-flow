@@ -148,11 +148,11 @@ function Hero() {
 /* ---------------- Trust bar ---------------- */
 function TrustBar() {
   const items = [
-    "Cuir tanné en Europe",
-    "Semelle anatomique",
-    "— 1 800 g pour la paire —",
-    "Garantie 2 ans",
-    "Made for daily wear",
+    "Bout fermé · à enfiler",
+    "Semelle épaisse caoutchouc",
+    "— Antidérapante —",
+    "Intérieur doux & chaud",
+    "Style vintage · daily wear",
   ];
   return (
     <div className="border-y border-border bg-sand/40 overflow-hidden">
