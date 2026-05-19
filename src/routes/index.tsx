@@ -458,7 +458,7 @@ function Faq() {
     },
     {
       q: "Comment les entretenir ?",
-      a: "Un chiffon doux et un peu de cirage neutre suffisent. Évitez l'eau prolongée. Nous offrons un kit d'entretien dans chaque commande.",
+      a: "Brossez le daim avec une brosse douce pour raviver le nubuck. Évitez l'eau prolongée. Un spray imperméabilisant prolonge la tenue du daim et du liège.",
     },
     {
       q: "Quelle est la politique de retour ?",
@@ -588,7 +588,7 @@ function StickyCta() {
           <div className="text-[10px] uppercase tracking-[0.2em] text-background/60">
             35,99 €
           </div>
-          <div className="text-sm">Mule NOARA — Cuir</div>
+          <div className="text-sm">Sabot NOARA — Daim</div>
         </div>
         <a
           href="#cta"
