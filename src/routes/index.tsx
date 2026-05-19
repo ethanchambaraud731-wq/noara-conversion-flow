@@ -89,17 +89,18 @@ function Hero() {
     <section className="relative overflow-hidden">
       <div className="container-tight grid md:grid-cols-12 gap-10 lg:gap-16 pt-10 md:pt-20 pb-16 md:pb-24">
         <div className="md:col-span-6 flex flex-col justify-center">
-          <span className="eyebrow mb-6">Nouvelle collection — Été</span>
+          <span className="eyebrow mb-6">Nouvelle collection — Automne / Hiver</span>
           <h1 className="text-[2.6rem] sm:text-5xl lg:text-[4rem] leading-[1.05] text-balance">
-            Des mules conçues pour marcher{" "}
+            La mule fermée qui se glisse{" "}
             <em className="italic font-light text-muted-foreground">
-              toute la journée
+              en une seconde
             </em>{" "}
-            sans renoncer au style.
+            et se porte toute la journée.
           </h1>
           <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-md leading-relaxed">
-            Semelle ergonomique, cuir souple, légèreté absolue. Le confort
-            d'une sandale orthopédique, l'allure d'une pièce premium.
+            Bout rond fermé, semelle épaisse en caoutchouc antidérapante,
+            intérieur doux. Un confort vintage pensé pour la ville comme
+            pour la maison.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-5">
             <a href="#cta" className="btn-primary">
