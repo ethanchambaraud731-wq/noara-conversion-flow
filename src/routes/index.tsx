@@ -250,10 +250,10 @@ function Solution() {
 /* ---------------- Benefits ---------------- */
 function Benefits() {
   const items = [
-    { icon: Footprints, t: "Confort longue durée", d: "Pensée pour 10 000 pas, sans douleur." },
-    { icon: Sparkles, t: "Élégance minimaliste", d: "Une silhouette épurée, intemporelle." },
-    { icon: Feather, t: "Légèreté absolue", d: "Comme marcher pieds nus, en mieux." },
-    { icon: Sun, t: "Intérieur · extérieur", d: "À la maison, en ville, en été." },
+    { icon: Footprints, t: "Semelle antidérapante", d: "Caoutchouc épais, accroche parfaite." },
+    { icon: Sparkles, t: "Esprit vintage", d: "Une silhouette intemporelle, sans effort." },
+    { icon: Feather, t: "À enfiler", d: "Aucun lacet, aucune boucle. Glissez." },
+    { icon: Sun, t: "Automne · Hiver", d: "À la maison, en ville, par tous les temps." },
   ];
   return (
     <section id="benefices" className="py-24 md:py-32">
