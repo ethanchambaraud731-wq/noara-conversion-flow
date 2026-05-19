@@ -24,17 +24,17 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     meta: [
-      { title: "NOARA — Mules confort, design minimaliste" },
+      { title: "NOARA — Mules fermées vintage, semelle épaisse & confort" },
       {
         name: "description",
         content:
-          "Des mules conçues pour marcher toute la journée. Ergonomie, matériaux premium, élégance naturelle. Livraison offerte, retours 30 jours.",
+          "Mules à enfiler, bout fermé, semelle épaisse caoutchouc antidérapante. Confort vintage pour l'automne/hiver. 4,7/5 — 4 309 avis vérifiés.",
       },
-      { property: "og:title", content: "NOARA — Mules confort & élégance" },
+      { property: "og:title", content: "NOARA — Mules fermées confort vintage" },
       {
         property: "og:description",
         content:
-          "Le confort d'une sandale ergonomique, le style d'une mule premium.",
+          "Bout rond, semelle épaisse antidérapante, à enfiler. Confortables toute la journée.",
       },
       { property: "og:image", content: heroImg },
     ],
