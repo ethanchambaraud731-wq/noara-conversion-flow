@@ -24,17 +24,17 @@ export const Route = createFileRoute("/")({
   component: Landing,
   head: () => ({
     meta: [
-      { title: "NOARA — Mules confort, design minimaliste" },
+      { title: "NOARA — Mules fermées vintage, semelle épaisse & confort" },
       {
         name: "description",
         content:
-          "Des mules conçues pour marcher toute la journée. Ergonomie, matériaux premium, élégance naturelle. Livraison offerte, retours 30 jours.",
+          "Mules à enfiler, bout fermé, semelle épaisse caoutchouc antidérapante. Confort vintage pour l'automne/hiver. 4,7/5 — 4 309 avis vérifiés.",
       },
-      { property: "og:title", content: "NOARA — Mules confort & élégance" },
+      { property: "og:title", content: "NOARA — Mules fermées confort vintage" },
       {
         property: "og:description",
         content:
-          "Le confort d'une sandale ergonomique, le style d'une mule premium.",
+          "Bout rond, semelle épaisse antidérapante, à enfiler. Confortables toute la journée.",
       },
       { property: "og:image", content: heroImg },
     ],
@@ -89,17 +89,18 @@ function Hero() {
     <section className="relative overflow-hidden">
       <div className="container-tight grid md:grid-cols-12 gap-10 lg:gap-16 pt-10 md:pt-20 pb-16 md:pb-24">
         <div className="md:col-span-6 flex flex-col justify-center">
-          <span className="eyebrow mb-6">Nouvelle collection — Été</span>
+          <span className="eyebrow mb-6">Nouvelle collection — Automne / Hiver</span>
           <h1 className="text-[2.6rem] sm:text-5xl lg:text-[4rem] leading-[1.05] text-balance">
-            Des mules conçues pour marcher{" "}
+            La mule fermée qui se glisse{" "}
             <em className="italic font-light text-muted-foreground">
-              toute la journée
+              en une seconde
             </em>{" "}
-            sans renoncer au style.
+            et se porte toute la journée.
           </h1>
           <p className="mt-6 text-base md:text-lg text-muted-foreground max-w-md leading-relaxed">
-            Semelle ergonomique, cuir souple, légèreté absolue. Le confort
-            d'une sandale orthopédique, l'allure d'une pièce premium.
+            Bout rond fermé, semelle épaisse en caoutchouc antidérapante,
+            intérieur doux. Un confort vintage pensé pour la ville comme
+            pour la maison.
           </p>
           <div className="mt-9 flex flex-wrap items-center gap-5">
             <a href="#cta" className="btn-primary">
@@ -132,10 +133,10 @@ function Hero() {
               {Array.from({ length: 5 }).map((_, i) => (
                 <Star key={i} className="h-3.5 w-3.5 fill-current" />
               ))}
-              <span className="ml-2 text-xs text-muted-foreground">4,9 / 5 · 2 384 avis</span>
+              <span className="ml-2 text-xs text-muted-foreground">4,7 / 5 · 4 309 avis</span>
             </div>
             <p className="mt-2 text-sm leading-snug">
-              « Je les porte tous les jours, zéro douleur. »
+              « Très belles, confortables, belle couleur. Parfait. »
             </p>
           </div>
         </div>
@@ -147,11 +148,11 @@ function Hero() {
 /* ---------------- Trust bar ---------------- */
 function TrustBar() {
   const items = [
-    "Cuir tanné en Europe",
-    "Semelle anatomique",
-    "— 1 800 g pour la paire —",
-    "Garantie 2 ans",
-    "Made for daily wear",
+    "Bout fermé · à enfiler",
+    "Semelle épaisse caoutchouc",
+    "— Antidérapante —",
+    "Intérieur doux & chaud",
+    "Style vintage · daily wear",
   ];
   return (
     <div className="border-y border-border bg-sand/40 overflow-hidden">
@@ -220,18 +221,19 @@ function Solution() {
         <div className="md:col-span-6 order-1 md:order-2">
           <span className="eyebrow">La réponse</span>
           <h2 className="mt-4 text-3xl md:text-5xl leading-[1.1]">
-            Pensées comme une sandale ergonomique. Dessinées comme une mule.
+            Bout fermé, semelle épaisse. Le confort d'une pantoufle, l'allure d'une vraie chaussure.
           </h2>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-            Chaque détail soutient votre pied : voûte plantaire enveloppée,
-            semelle à mémoire de forme, cuir souple qui épouse votre marche.
+            Une semelle caoutchouc épaisse et antidérapante, un bout rond
+            enveloppant, un intérieur doux qui tient chaud. Pensée pour
+            l'automne et l'hiver, à porter dehors comme à la maison.
           </p>
           <dl className="mt-10 grid sm:grid-cols-2 gap-x-8 gap-y-6">
             {[
-              ["Semelle anatomique", "Soutien de la voûte, absorption des chocs."],
-              ["Cuir nappa premium", "Souple dès le premier port, durable."],
-              ["Légèreté", "Moins de 280 g par mule."],
-              ["Conçu en atelier", "Finition main, tannage européen."],
+              ["Semelle épaisse caoutchouc", "Antidérapante, amortit chaque pas."],
+              ["Bout rond fermé", "Protège du froid et de l'humidité."],
+              ["À enfiler", "Glissez-les en une seconde, sans lacets."],
+              ["Intérieur doux", "Tissu chaud, sensation pantoufle."],
             ].map(([t, d]) => (
               <div key={t}>
                 <dt className="font-medium">{t}</dt>
@@ -248,10 +250,10 @@ function Solution() {
 /* ---------------- Benefits ---------------- */
 function Benefits() {
   const items = [
-    { icon: Footprints, t: "Confort longue durée", d: "Pensée pour 10 000 pas, sans douleur." },
-    { icon: Sparkles, t: "Élégance minimaliste", d: "Une silhouette épurée, intemporelle." },
-    { icon: Feather, t: "Légèreté absolue", d: "Comme marcher pieds nus, en mieux." },
-    { icon: Sun, t: "Intérieur · extérieur", d: "À la maison, en ville, en été." },
+    { icon: Footprints, t: "Semelle antidérapante", d: "Caoutchouc épais, accroche parfaite." },
+    { icon: Sparkles, t: "Esprit vintage", d: "Une silhouette intemporelle, sans effort." },
+    { icon: Feather, t: "À enfiler", d: "Aucun lacet, aucune boucle. Glissez." },
+    { icon: Sun, t: "Automne · Hiver", d: "À la maison, en ville, par tous les temps." },
   ];
   return (
     <section id="benefices" className="py-24 md:py-32">
@@ -308,10 +310,15 @@ function Gallery() {
 /* ---------------- Social proof ---------------- */
 function SocialProof() {
   const reviews = [
-    { n: "Camille L.", q: "Je les porte tous les jours, zéro douleur après une journée entière au bureau." },
-    { n: "Anaïs R.", q: "Enfin des mules stylées ET confortables. Je ne porte plus que ça." },
-    { n: "Sophie M.", q: "Le cuir est sublime, et la semelle change tout. Mes pieds disent merci." },
-    { n: "Élise B.", q: "Parfaites en ville, à la maison, en terrasse. Un vrai coup de cœur." },
+    { n: "Frederique D.", d: "26 mars 2026", q: "Très belles, confortables, belle couleur. Parfait." },
+    { n: "Camille N.", d: "23 janv. 2026", q: "Taillent bien, très agréables à porter. Excellent rapport qualité-prix." },
+    { n: "Sophie M.", d: "25 avr. 2026", q: "J'ai bien aimé. La couleur et la taille sont exactement celles que je prends d'habitude." },
+    { n: "Béatrice L.", d: "8 avr. 2026", q: "Belle finition et très confortables. Je recommande." },
+  ];
+  const fit = [
+    { label: "Taille petit", value: 3 },
+    { label: "Taille juste", value: 90 },
+    { label: "Taille grand", value: 7 },
   ];
   return (
     <section id="avis" className="bg-sand/50 py-24 md:py-32">
@@ -320,7 +327,7 @@ function SocialProof() {
           <div className="max-w-xl">
             <span className="eyebrow">Elles en parlent</span>
             <h2 className="mt-3 text-3xl md:text-5xl leading-[1.05]">
-              4,9 / 5 — sur 2 384 avis vérifiés.
+              4,7 / 5 — sur 4 309 avis vérifiés.
             </h2>
           </div>
           <div className="flex items-center gap-1">
@@ -328,6 +335,20 @@ function SocialProof() {
               <Star key={i} className="h-5 w-5 fill-current text-foreground" />
             ))}
           </div>
+        </div>
+
+        <div className="mt-10 grid md:grid-cols-3 gap-4 max-w-3xl">
+          {fit.map((f) => (
+            <div key={f.label} className="bg-background border border-border rounded-sm p-5">
+              <div className="flex items-baseline justify-between">
+                <span className="text-xs uppercase tracking-[0.2em] text-muted-foreground">{f.label}</span>
+                <span className="font-display text-2xl">{f.value}%</span>
+              </div>
+              <div className="mt-3 h-1 bg-sand-deep/50 rounded-full overflow-hidden">
+                <div className="h-full bg-foreground" style={{ width: `${f.value}%` }} />
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -340,11 +361,14 @@ function SocialProof() {
               </div>
               <blockquote className="text-base leading-relaxed flex-1">« {r.q} »</blockquote>
               <figcaption className="mt-5 text-xs text-muted-foreground uppercase tracking-widest">
-                {r.n} · Achat vérifié
+                {r.n} · {r.d}
               </figcaption>
             </figure>
           ))}
         </div>
+        <p className="mt-6 text-xs text-muted-foreground">
+          Tous les avis proviennent d'achats vérifiés.
+        </p>
       </div>
     </section>
   );
