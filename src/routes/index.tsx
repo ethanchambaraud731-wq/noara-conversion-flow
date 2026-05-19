@@ -221,18 +221,19 @@ function Solution() {
         <div className="md:col-span-6 order-1 md:order-2">
           <span className="eyebrow">La réponse</span>
           <h2 className="mt-4 text-3xl md:text-5xl leading-[1.1]">
-            Pensées comme une sandale ergonomique. Dessinées comme une mule.
+            Bout fermé, semelle épaisse. Le confort d'une pantoufle, l'allure d'une vraie chaussure.
           </h2>
           <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-            Chaque détail soutient votre pied : voûte plantaire enveloppée,
-            semelle à mémoire de forme, cuir souple qui épouse votre marche.
+            Une semelle caoutchouc épaisse et antidérapante, un bout rond
+            enveloppant, un intérieur doux qui tient chaud. Pensée pour
+            l'automne et l'hiver, à porter dehors comme à la maison.
           </p>
           <dl className="mt-10 grid sm:grid-cols-2 gap-x-8 gap-y-6">
             {[
-              ["Semelle anatomique", "Soutien de la voûte, absorption des chocs."],
-              ["Cuir nappa premium", "Souple dès le premier port, durable."],
-              ["Légèreté", "Moins de 280 g par mule."],
-              ["Conçu en atelier", "Finition main, tannage européen."],
+              ["Semelle épaisse caoutchouc", "Antidérapante, amortit chaque pas."],
+              ["Bout rond fermé", "Protège du froid et de l'humidité."],
+              ["À enfiler", "Glissez-les en une seconde, sans lacets."],
+              ["Intérieur doux", "Tissu chaud, sensation pantoufle."],
             ].map(([t, d]) => (
               <div key={t}>
                 <dt className="font-medium">{t}</dt>
